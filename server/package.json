@@ -12,7 +12,8 @@
     "nodemon": "^2.0.15"
   },
   "scripts": {
-    
-    "start": "node index.js"
+    "dev":"nodemon index.js",
+    "build":"yarn add",
+    "start": "nodemon index.js"
   }
 }
