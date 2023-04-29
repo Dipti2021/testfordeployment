@@ -74,11 +74,6 @@ app.patch("/api/addfriend", updateFriends);
 // Serve static assets from the /public folder
 app.use(express.static(join(__dirname, "public")));
 
-// Endpoint to serve the configuration file
-app.get("/auth_config.json", (req, res) => {
-  res.sendFile(join(__dirname, "auth_config.json"));
-});
-
 // this is our catch all endpoint.
 app.get("*", (req, res) => {
   res.status(404).json({
