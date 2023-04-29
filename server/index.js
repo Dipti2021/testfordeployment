@@ -92,4 +92,4 @@ app.get("*", (req, res) => {
 });
 
 // Node spins up our server and sets it to listen on port 8000.
-app.listen(8002, () => console.log(`Listening on port 8000`));
+app.listen(8002, () => console.log(`Listening on port 8002`));
