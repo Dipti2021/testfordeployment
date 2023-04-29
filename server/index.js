@@ -79,10 +79,6 @@ app.get("/auth_config.json", (req, res) => {
   res.sendFile(join(__dirname, "auth_config.json"));
 });
 
-// Serve the index page for all other requests
-app.get("/*", (_, res) => {
-  res.sendFile(join(__dirname, "index.html"));
-});
 // this is our catch all endpoint.
 app.get("*", (req, res) => {
   res.status(404).json({
